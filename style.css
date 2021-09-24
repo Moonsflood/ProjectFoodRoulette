@@ -25,6 +25,12 @@
   margin-top: 0.6em;
 }
 
+.ran2--Food-Btn {
+  position: absolute;
+  margin-top:0.2em ;
+}
+
+
 .foodtype {
   text-align: center;
   color: black;
