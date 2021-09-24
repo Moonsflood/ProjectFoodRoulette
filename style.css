@@ -3,26 +3,26 @@
 }
 
 .btn {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  color: #444;
-  background: none;
-  border: none;
-  font-family: inherit;
-  font-size: 1.8rem;
-  text-transform: uppercase;
-  cursor: pointer;
-  font-weight: 400;
+  display: inline-block;
+  padding: 0.3em 1.2em;
+  border: 0.1em solid;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  text-align: center;
   transition: all 0.2s;
+}
 
-  background-color: white;
-  background-color: rgba(255, 255, 255, 0.6);
-  backdrop-filter: blur(10px);
+.btn:hover {
+  background-color: #ffffff;
+}
 
-  padding: 0.7rem 2.5rem;
-  border-radius: 50rem;
-  box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
+.ran1--Food-Btn {
+  position: absolute;
+  margin-top: 0.6em;
 }
 
 .foodtype {
@@ -40,3 +40,14 @@ p {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.hidden {
+  display: none;
+}
+
+.randomFood {
+  text-align: center;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
