@@ -1,7 +1,7 @@
 'use strict';
 
 //Array to store the food types
-let foodTypes = [
+/*let foodTypes = [
   'Fast Food',
   'Thai Food',
   'Turkish food',
@@ -11,7 +11,57 @@ let foodTypes = [
   'French Food',
   'Japanese Food',
   'Chinese Food',
-];
+];*/
+
+let foodTypes = {
+  fast: 'Fast Food',
+  thai: 'Thai Food',
+  turk: 'Turkish',
+  mex: 'Mexican Food',
+  span: 'Spanish Food',
+  Ital: 'Italian Food',
+  fren: 'French Food',
+  jap: 'Japanese Food',
+  chi: 'Chinese Food',
+};
+
+let foods = {
+  fastFood: ['wendy', 'tacobell', 'subway'],
+  thaiFood: ['bedford thai', 'thai1', 'thai2'],
+  turkishFood: ['Laylas', 'Betis', 'Istanbul rest'],
+};
+
+// Random Key
+//console.log(Object.keys(animals)[Math.floor(Math.random()*Object.keys(animals).length)]);
+
+// Random Value
+//console.log(animals[Object.keys(animals)[Math.floor(Math.random()*Object.keys(animals).length)]]);
+
+
+// Food button function selects a random array from the object 
+function foodButton() {
+  var randomFood = (Object.keys(foods)[Math.floor(Math.random()*Object.keys(foods).length)])
+  console.log(randomFood);
+  document.querySelector('.randomFood').innerHTML = randomFood;
+
+//Resturant Button function should select the random selected array - then select a random food. Currently it is hard coded to random 'fast food' values 
+
+} function resturantButton () {
+  var randomRest = (foods.fastFood[Object.keys(foods.fastFood)[Math.floor(Math.random()*Object.keys(foods.fastFood).length)]])
+  console.log(randomRest);
+  document.querySelector('.resturantFood').innerHTML = randomRest;
+}
+
+
+/*function foodButton() {
+  let randomFood = foods.fastFood[[Math.trunc(Math.random() * foods.fastFood.length)]];
+  //console.log(randomFood);
+  document.querySelector('.randomFood').innerHTML = randomFood;
+  console.log(randomFood);
+  
+}*/
+
+
 
 //Configuring the random food button
 const ranFoodBtn = document.querySelector('.ran--Food--Btn');
@@ -36,12 +86,13 @@ function FdBtn() {
 }
 */
 
-function foodButton() {
+/*function foodButton() {
   let randomFood = foodTypes[Math.trunc(Math.random() * foodTypes.length)];
   //console.log(randomFood);
   document.querySelector('.randomFood').innerHTML = randomFood;
-}
-function resturantButton() {
+}*/
+
+/*function resturantButton() {
   if (randomFood === fastFood) {
     let resturantFood = fastFood[Math.trunc(Math.random() * fastFood.length)];
     //console.log(randomFood);
@@ -51,6 +102,8 @@ function resturantButton() {
     document.querySelector('.resturantFood').innerHTML = resturantFood;
   }
 }
+*/
+
 //Array for each food type to select options/resturants
 const fastFood = [
   "Wendy's",
