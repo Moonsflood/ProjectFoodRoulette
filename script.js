@@ -18,16 +18,10 @@ function getRandomKeyFromObject(obj) {
   return Object.keys(obj)[Math.floor(Math.random() * Object.keys(obj).length)];
 }
 
-//function to return random element from an array 
+//function to return random element from an array
 function getRandomElementFromArray(array) {
   return array[[Math.trunc(Math.random() * array.length)]];
 }
-
-// Random Key
-//console.log(Object.keys(animals)[Math.floor(Math.random()*Object.keys(animals).length)]);
-
-// Random Value
-//console.log(animals[Object.keys(animals)[Math.floor(Math.random()*Object.keys(animals).length)]]);
 
 // Food button function selects a random array from the object
 function foodButton() {
@@ -41,8 +35,3 @@ function resturantButton() {
   let randomRest = getRandomElementFromArray(foods[randomFood]);
   document.querySelector('.resturantFood').innerHTML = randomRest;
 }
-
-//Configuring the random food button
-const ranFoodBtn = document.querySelector('.ran--Food--Btn');
-//const ranFoodBtn1 = document.getElementById('ran--Food--Btn1');
-
